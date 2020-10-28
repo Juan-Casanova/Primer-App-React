@@ -1,0 +1,28 @@
+import React from 'react';
+import './style.css';
+
+const Tweet = () => {
+    return (
+        <div className="tweet-container">
+            <div className="row">
+                <div className="c1">
+                    <img src="data:image/jpeg;base64,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"/>
+                </div>
+                <div className="c2">
+                    <h6>Twitter Safety</h6>
+                    <h6>@TwitterSafety</h6>
+                </div>
+                <div className="c3">
+
+                </div>
+            </div>
+            <div className="row">
+                <p>
+                es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export default Tweet;
